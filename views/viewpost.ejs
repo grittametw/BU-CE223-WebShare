@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM Create Post</title>
+
+    <link rel="stylesheet" href="css/post.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Roboto:wght@700&display=swap" rel="stylesheet">
+<style type="text/css">
+
+body{
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Roboto', sans-serif;
+} 
+</style>
+</head>
+<body>
+
+    <div class="container bg">
+
+        <div class="menu">
+
+            <div class="img-resize">
+            <img src="/img/Logo.png" />
+            </div>
+
+            <ul>
+
+            <li><a href="/">Home</a>
+            </li>
+
+            <li><a href="#">My Account</a>
+            </li>
+
+            <li><a href="#">Create Post</a>
+            </li>
+
+            <li><a href="#">Signout</a>
+            </li>
+
+            </ul>
+    </div>
+
+    <section class="testpost">
+        <div class="wrapper">
+          <div class="input-box">
+            <div class="tweet-area">
+            <form action="/post" method="post">
+              <span class="placeholder">What's happening?</span>
+              <div class="input editable" contenteditable ="true" spellcheck="false"></div>
+              <div class="input readonly" contenteditable ="true" spellcheck="false"></div>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="content">
+              <span class="counter">100</span>
+              <button onclick="myFunction()">Tweet</button>
+              <script>
+                function myFunction() {
+                    document.getElementById("twit").innerHTML = document.getElementById("text").value;
+                }
+                </script>
+            </form>
+            </div>
+          </div>
+        </div>
+    
+        <script src="script.js"></script>
+    </section>
+</body>
+
+</html>

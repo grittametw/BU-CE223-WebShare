@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --red : #ff0000;
+    --white : #ffffff;
+    --grey : #969595;
+    --blue : #064179;
+    --grey2 : #dbdbdbde;
+    --black : rgba(0, 0, 0, 0);
+    --dark80 : rgba(0, 0, 0, 0.8);
+    --dark60 : rgba(14, 6, 54, 0.61);
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    overflow: auto;
+}
+
+body{
+    background:
+    linear-gradient(
+        var(--dark60),var(--dark60)
+    ),
+    url(/img/square.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    display : flex;
+    align-items: center;
+    height: 70px;
+    color: var(--white);
+}
+
+a{
+    font-family: "Roboto" , sans-serif;
+    color: var(--white);
+}
+
+a:hover{
+    color: var(--grey);
+}
+
+main{
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(60px,1fr) repeat(6,minmax(60px,190px)) minmax(60px,1fr);
+}
+
+header{
+    grid-column: 2 / span 8;
+}
+
+.status a {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.status{
+    margin-left: auto;
+    margin-right: 150px;
+}
+
+.button_su{
+    background-color: none;
+    color: none;
+    padding: 5px 8px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.button_su:hover{
+    color: var(--grey);
+}
+
+.info{
+    grid-column: 2 / span 4;
+}
+
+.main_font{
+    color: var(--white);
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 0 50px 0 60px; /* บน ขวา ล่าง ซ้าย */
+}
+
+.plans{
+    display: flex;
+    margin: 0 60px 50px 0;
+}
+
+.plan_info{
+    background-color: var(--grey2);
+    color: none;
+    padding: 50px 8px;
+    margin-left: auto;
+    margin-right: 100px;
+
+}
+
+.group1{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 20px 15px;
+    font-weight: 100;
+    font-size: 1rem;
+    margin: 0 50px 0 60px; /* บน ขวา ล่าง ซ้าย */
+} 
+
+.group2{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 20px 50px;
+    font-weight: 50;
+    font-size: 1rem;
+    margin: 0 50px 0 60px; /* บน ขวา ล่าง ซ้าย */
+}  
+
+.plan_info{
+    margin: 0 50px 0 50px; /* บน ขวา ล่าง ซ้าย */
+}
+
+.price{
+    font-weight: 100;
+    font-size: 3rem;
+    margin: 0 50px 0 50px; /* บน ขวา ล่าง ซ้าย */
+}
+
+.features{
+    font-weight: 100;
+    font-size: 1.5rem;
+}
